@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><meta name="google-site-verification" content="_wxrTRAcgx3bHof630x75_YKSXklUH55NkOAA_5GfmU"><link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="/favicon.ico"><title>1.5.25 Release - RuneLite</title><meta name="description" content="Stash unit build status, mobile-style clan tab chat, and music list searching"><meta name="author" content="Jordan"><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes"></script><script type="text/javascript">!function(i){if(i.search){var l={};i.search.slice(1).split("&").forEach(function(i){var a=i.split("=");l[a[0]]=a.slice(1).join("=").replace(/~and~/g,"&")}),void 0!==l.p&&window.history.replaceState(null,null,i.pathname.slice(0,-1)+(l.p||"")+(l.q?"?"+l.q:"")+i.hash)}}(window.location)</script><link href="/static/css/6.ed9d89f5.chunk.css" rel="stylesheet"><link href="/static/css/main.dc4f3a01.chunk.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/static/css/4.7ba3dd52.chunk.css"><script charset="utf-8" src="/static/js/4.7f35fc5b.chunk.js"></script><script charset="utf-8" src="/static/js/94.162b14c3.chunk.js"></script></head><body><div id="root"><div style="height: 100%;"><div class="fixed-top animated loader" style="display: none;"></div><nav class="navbar navbar-expand-lg fixed-top navbar-dark"><a class="navbar-brand" activeclassname="active" href="/"><img src="/img/runelite_logo_transparent.png" class="icon" alt="RuneLite"> </a><input type="checkbox" id="navbar-check-box"><label for="navbar-check-box" class="navbar-toggler"><span class="navbar-toggler-icon"></span></label><div class="collapse navbar-collapse" id="navbar"><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" activeclassname="active" href="/features">Features</a></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/blog">Blog</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/runelite/runelite/wiki">Wiki</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown">API</a><div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="https://static.runelite.net/api/http-service/">RuneLite HTTP API</a><a class="dropdown-item" href="https://static.runelite.net/api/runelite-api/">RuneLite API</a><a class="dropdown-item" href="https://static.runelite.net/api/runelite-client/">RuneLite Client API</a></div></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/tag">Tags</a></li><li class="nav-item"><a class="nav-link" activeclassname="active" href="/plugin-hub">Plugin Hub</a></li></ul><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="https://www.patreon.com/runelite">Become a patron</a></li><li class="nav-item"><a class="nav-link nav-icon" href="https://runelite.net/discord" title="Discord"><i class="fab fa-discord"></i><span class="d-lg-none"> Discord</span></a></li><li class="nav-item"><a class="nav-link nav-icon" href="https://twitter.com/RuneLiteClient" title="Twitter"><i class="fab fa-twitter"></i><span class="d-lg-none"> Twitter</span></a></li><li class="nav-item"><a class="nav-link nav-icon" href="https://github.com/runelite" title="GitHub"><i class="fab fa-github"></i><span class="d-lg-none"> GitHub</span></a></li><li class="nav-item"><form class="form-inline"><button class="btn btn-primary" type="button">Login</button></form></li></ul></div></nav><div class="container" id="layout"><section id="blog"><div class="content-section"><h1>1.5.25 Release</h1><p class="text-muted"><span title="Thu May 30 2019 10:00:00 GMT+0000 (Coordinated Universal Time)">11 months ago</span> by Jordan</p><div class="markdown-body news-page"><div><p>The <a href="https://github.com/runelite/runelite/wiki/Clue-Scroll">Clue Scroll plugin</a> will now display
+whether you have built the STASH unit for emote clues and will mark the tile of nearby STASH units
+when travelling to complete your clue. Thanks to <a href="https://github.com/hex-agon">@hex-agon</a> for this
+contribution!</p>
+<p><img src="/img/blog/1.5.25-Release/stash-unit-status.gif" alt="STASH unit build status and location indicator"></p>
+<p>The <a href="https://github.com/runelite/runelite/wiki/Clan-Chat">Clan Chat plugin</a> now offers an option to
+allow chat typed in the Clan tab to be sent to your clan chat without the need for your message to
+start with <code>/</code>, just like on mobile!</p>
+<p>A <a href="https://github.com/runelite/runelite/wiki/Music-List">Music List plugin</a> has been added, which
+adds similar functionality as is found in the
+<a href="https://github.com/runelite/runelite/wiki/Quest-List">Quest List plugin</a>, that is ability to show
+only unlocked or locked songs, and search functionality. Thanks to
+<a href="https://github.com/achencoms">@achencoms</a> for adding this feature.</p>
+<p><img src="/img/blog/1.5.25-Release/music-filter.png" alt="Music filtering and search"></p>
+<p>There are also several smaller improvements and bug fixes, including:</p>
+<ul>
+<li>Plugin names in the plugin list panel now display a pop-up menu when clicked, linking directly to
+their wiki pages</li>
+<li>The
+<a href="https://github.com/runelite/runelite/wiki/Special-Attack-Counter">Special Attack Counter plugin</a>
+no longer resets recorded special attacks when interacting with NPCs which cannot be attacked</li>
+<li>The <a href="https://github.com/runelite/runelite/wiki/Cooking">Cooking plugin</a> properly displays the time
+to fermentation when making a full inventory of wines</li>
+<li>The <a href="https://github.com/runelite/runelite/wiki/Clue-Scroll">Clue Scroll plugin</a> will now display
+solutions for
+<a href="https://oldschool.runescape.wiki/w/Treasure_Trails/Guide/Maps/Beginner">beginner-level map clues</a></li>
+<li>A bug which would cause the special attack bar to not be updated when hide auto retaliate was on has been fixed</li>
+<li>The <a href="https://github.com/runelite/runelite/wiki/World-Map">World Map plugin</a> now shows the location
+of the Camulet teleport</li>
+<li>An option has been added to the
+<a href="https://github.com/runelite/runelite/wiki/Menu-Entry-Swapper">Menu Entry Swapper plugin</a> to swap
+"Send-parcel" and "Quick-pay(100)" for quick and easy access to the hardwood grove in Tai Bwo
+Wannai</li>
+<li>The <a href="https://github.com/runelite/runelite/wiki/Chat-Filter">Chat Filter plugin</a> now has options to
+prevent filtering messages sent by friends and clan members, and will now never filter messages from yourself</li>
+<li>The <a href="https://github.com/runelite/runelite/wiki/Opponent-Information">Opponent Information plugin</a>
+can now display both HP value and percent at once on the displayed opponent HP bar</li>
+<li>The Clue Scroll, Time Tracking, and World Map plugins have had updates to reflect last week's
+Hosidius rework</li>
+</ul>
+<p>Enjoy!</p>
+<p>- Jordan</p>
+<h3 id="new-commits">New commits</h3>
+<p>We had 14 contributors this release!</p>
+<pre><code>Adam (6):
+      quest list plugin: fix removing widets on shutdown
+      xtea service: fix bulk query returning duplicates
+      clanchat plugin: add clan tab chat option
+      client: fix spec bar not updating with hide auto retaliate on
+      spec counter: ignore non attacakble npcs
+      clue plugin: update Hosidius clue hint from rework
+
+Austin Bryant (1):
+      cooking plugin: fix wine fermentation timer to begin at appropriate time
+
+Cistoran (1):
+      worldmap: update Xeric's Glade teleport location
+
+Hexagon (1):
+      clue plugin: add stash unit built status to emote clue overlay
+
+Hydrox6 (2):
+      clues: add support for beginner maps
+      Fix Hosidius Easy Cryptic clue after rework (#8940)
+
+Jacky Liang (1):
+      Add camulet teleport icon to worldmap (#8934)
+
+Jared N (1):
+      menu swapper: add Hardwood Grove menu swap option
+
+Jordan Atwood (3):
+      PluginManagerTest: Ensure config keyNames are not duplicated
+      plugins panel: Add wiki link to name labels
+      attack styles: Attach spec bar redraw listener to weapon text
+
+Max Weber (5):
+      runelite-api: Correct WallObject documentation
+      mixins: Correct WallObject's clickbox
+      mixins: Correct DecorativeObject's clickbox
+      timetracking: Update farming patches for the Hosidius rework
+      timetracking: Don't crash when seeing a garbage varbit value
+
+Tomas Slusny (1):
+      Add support for center label to ProgressBarComponent
+
+achencoms (1):
+      client: add music list plugin and search filter
+
+osrs-music-map (1):
+      chat filter: add options to filter friends and clan members
+
+seandewar (1):
+      opponentinfo: add option to show both hp value and percent
+
+xDemoN (1):
+      Fix amulet of fury spelling error in ItemMapping.java (#8885)
+</code></pre></div></div></div></section><section><div class="content-section"><footer><hr>Developed with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i> using <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="https://reactjs.org/">React</a> and <a href="https://fontawesome.com/">Font Awesome</a><a href="http://localhost:8000/atom.xml" class="float-right"><i class="fas fa-rss"></i> Subscribe via RSS</a></footer></div></section></div></div></div><script>!function(o){function e(e){for(var c,f,d=e[0],t=e[1],r=e[2],a=0,n=[];a<d.length;a++)f=d[a],Object.prototype.hasOwnProperty.call(l,f)&&l[f]&&n.push(l[f][0]),l[f]=0;for(c in t)Object.prototype.hasOwnProperty.call(t,c)&&(o[c]=t[c]);for(p&&p(e);n.length;)n.shift()();return u.push.apply(u,r||[]),b()}function b(){for(var e,c=0;c<u.length;c++){for(var f=u[c],d=!0,t=1;t<f.length;t++){var r=f[t];0!==l[r]&&(d=!1)}d&&(u.splice(c--,1),e=s(s.s=f[0]))}return e}var f={},i={1:0},l={1:0},u=[];function s(e){if(f[e])return f[e].exports;var c=f[e]={i:e,l:!1,exports:{}};return o[e].call(c.exports,c,c.exports,s),c.l=!0,c.exports}s.e=function(u){var e=[];i[u]?e.push(i[u]):0!==i[u]&&{3:1,4:1,5:1,7:1,8:1,9:1,10:1,11:1,12:1,13:1,14:1,15:1}[u]&&e.push(i[u]=new Promise(function(e,d){for(var c="static/css/"+({}[u]||u)+"."+{2:"31d6cfe0",3:"2980c83c",4:"7ba3dd52",5:"7ba3dd52",7:"e48ccbec",8:"7c781aa9",9:"7105c3bd",10:"4f9f09ec",11:"dfbc3683",12:"d5dee77a",13:"ff58d5af",14:"aabfbf21",15:"cdc15f6f",16:"31d6cfe0",17:"31d6cfe0",18:"31d6cfe0",19:"31d6cfe0",20:"31d6cfe0",21:"31d6cfe0",22:"31d6cfe0",23:"31d6cfe0",24:"31d6cfe0",25:"31d6cfe0",26:"31d6cfe0",27:"31d6cfe0",28:"31d6cfe0",29:"31d6cfe0",30:"31d6cfe0",31:"31d6cfe0",32:"31d6cfe0",33:"31d6cfe0",34:"31d6cfe0",35:"31d6cfe0",36:"31d6cfe0",37:"31d6cfe0",38:"31d6cfe0",39:"31d6cfe0",40:"31d6cfe0",41:"31d6cfe0",42:"31d6cfe0",43:"31d6cfe0",44:"31d6cfe0",45:"31d6cfe0",46:"31d6cfe0",47:"31d6cfe0",48:"31d6cfe0",49:"31d6cfe0",50:"31d6cfe0",51:"31d6cfe0",52:"31d6cfe0",53:"31d6cfe0",54:"31d6cfe0",55:"31d6cfe0",56:"31d6cfe0",57:"31d6cfe0",58:"31d6cfe0",59:"31d6cfe0",60:"31d6cfe0",61:"31d6cfe0",62:"31d6cfe0",63:"31d6cfe0",64:"31d6cfe0",65:"31d6cfe0",66:"31d6cfe0",67:"31d6cfe0",68:"31d6cfe0",69:"31d6cfe0",70:"31d6cfe0",71:"31d6cfe0",72:"31d6cfe0",73:"31d6cfe0",74:"31d6cfe0",75:"31d6cfe0",76:"31d6cfe0",77:"31d6cfe0",78:"31d6cfe0",79:"31d6cfe0",80:"31d6cfe0",81:"31d6cfe0",82:"31d6cfe0",83:"31d6cfe0",84:"31d6cfe0",85:"31d6cfe0",86:"31d6cfe0",87:"31d6cfe0",88:"31d6cfe0",89:"31d6cfe0",90:"31d6cfe0",91:"31d6cfe0",92:"31d6cfe0",93:"31d6cfe0",94:"31d6cfe0",95:"31d6cfe0",96:"31d6cfe0",97:"31d6cfe0",98:"31d6cfe0",99:"31d6cfe0",100:"31d6cfe0",101:"31d6cfe0",102:"31d6cfe0",103:"31d6cfe0",104:"31d6cfe0",105:"31d6cfe0",106:"31d6cfe0",107:"31d6cfe0",108:"31d6cfe0",109:"31d6cfe0",110:"31d6cfe0",111:"31d6cfe0",112:"31d6cfe0",113:"31d6cfe0",114:"31d6cfe0",115:"31d6cfe0",116:"31d6cfe0",117:"31d6cfe0",118:"31d6cfe0",119:"31d6cfe0",120:"31d6cfe0"}[u]+".chunk.css",t=s.p+c,f=document.getElementsByTagName("link"),r=0;r<f.length;r++){var a=(o=f[r]).getAttribute("data-href")||o.getAttribute("href");if("stylesheet"===o.rel&&(a===c||a===t))return e()}var n=document.getElementsByTagName("style");for(r=0;r<n.length;r++){var o;if((a=(o=n[r]).getAttribute("data-href"))===c||a===t)return e()}var b=document.createElement("link");b.rel="stylesheet",b.type="text/css",b.onload=e,b.onerror=function(e){var c=e&&e.target&&e.target.src||t,f=new Error("Loading CSS chunk "+u+" failed.\n("+c+")");f.code="CSS_CHUNK_LOAD_FAILED",f.request=c,delete i[u],b.parentNode.removeChild(b),d(f)},b.href=t,document.getElementsByTagName("head")[0].appendChild(b)}).then(function(){i[u]=0}));var f=l[u];if(0!==f)if(f)e.push(f[2]);else{var c=new Promise(function(e,c){f=l[u]=[e,c]});e.push(f[2]=c);var d,t=document.createElement("script");t.charset="utf-8",t.timeout=120,s.nc&&t.setAttribute("nonce",s.nc),t.src=s.p+"static/js/"+({}[u]||u)+"."+{2:"5899ec36",3:"7ff8d4fb",4:"7f35fc5b",5:"25d3d28e",7:"d86f0e97",8:"8a21172c",9:"c1eb654c",10:"031536ae",11:"dc603845",12:"120753f7",13:"68b9a238",14:"b426b54f",15:"3fa83610",16:"d75015f4",17:"9e48ec5d",18:"ca278195",19:"334be6f6",20:"fad5b8c9",21:"57d10f6b",22:"98b05bf4",23:"ad8da280",24:"85200d30",25:"935bb5c8",26:"34cf33ed",27:"f41fd8f7",28:"ab65c50f",29:"44491345",30:"ed621993",31:"0b0ee9e9",32:"d1e88669",33:"fc5d373d",34:"aeac51da",35:"ba60d515",36:"6e3b326e",37:"c6f679eb",38:"e2e93742",39:"664682b4",40:"0f035dad",41:"9c00fe1c",42:"e2b06820",43:"ae85ca47",44:"e55bde21",45:"76073513",46:"b6877131",47:"5425da9b",48:"cc5179d0",49:"46be5fb4",50:"44b6836e",51:"8aa2486f",52:"e3441c75",53:"d07e554b",54:"d8d29bf8",55:"7616f518",56:"a35c142e",57:"247d7f41",58:"e92b23f1",59:"2c4e36dc",60:"445fa5dc",61:"f1168c25",62:"fe9a04b3",63:"81075a26",64:"6315bea5",65:"9a8dec19",66:"fbba3478",67:"78c1fa84",68:"c9911bcb",69:"977204ce",70:"aa28fb7a",71:"d7055e22",72:"1cb03a28",73:"7b217dbb",74:"7e877036",75:"2d1f74df",76:"ede608dc",77:"67f3f7eb",78:"0d0c7d66",79:"0b339193",80:"5921198a",81:"f7c277db",82:"eacbca8d",83:"786c7221",84:"47cfc16b",85:"4cbc139f",86:"186c0ebd",87:"e5407642",88:"e8ddcfa1",89:"8d3d9449",90:"273386ae",91:"05d6891e",92:"67b4eeb1",93:"bcadb275",94:"162b14c3",95:"600cbb3c",96:"d357ea25",97:"3f4dd010",98:"f3a272a8",99:"0f8949bc",100:"0ec6933b",101:"2776a139",102:"edd6e1bd",103:"f6d8c7c4",104:"ede539bf",105:"ad838b9e",106:"eb65509a",107:"0ef3bc0c",108:"781ddfda",109:"05f00a58",110:"36afd90a",111:"75c89d79",112:"29c63f3f",113:"e152b74f",114:"83996a22",115:"66a47632",116:"ce970b27",117:"2f2a2d91",118:"f4cd92b2",119:"86567378",120:"a99d80e9"}[u]+".chunk.js";var r=new Error;d=function(e){t.onerror=t.onload=null,clearTimeout(a);var c=l[u];if(0!==c){if(c){var f=e&&("load"===e.type?"missing":e.type),d=e&&e.target&&e.target.src;r.message="Loading chunk "+u+" failed.\n("+f+": "+d+")",r.name="ChunkLoadError",r.type=f,r.request=d,c[1](r)}l[u]=void 0}};var a=setTimeout(function(){d({type:"timeout",target:t})},12e4);t.onerror=t.onload=d,document.head.appendChild(t)}return Promise.all(e)},s.m=o,s.c=f,s.d=function(e,c,f){s.o(e,c)||Object.defineProperty(e,c,{enumerable:!0,get:f})},s.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},s.t=function(c,e){if(1&e&&(c=s(c)),8&e)return c;if(4&e&&"object"==typeof c&&c&&c.__esModule)return c;var f=Object.create(null);if(s.r(f),Object.defineProperty(f,"default",{enumerable:!0,value:c}),2&e&&"string"!=typeof c)for(var d in c)s.d(f,d,function(e){return c[e]}.bind(null,d));return f},s.n=function(e){var c=e&&e.__esModule?function(){return e.default}:function(){return e};return s.d(c,"a",c),c},s.o=function(e,c){return Object.prototype.hasOwnProperty.call(e,c)},s.p="/",s.oe=function(e){throw console.error(e),e};var c=this["webpackJsonprunelite.net"]=this["webpackJsonprunelite.net"]||[],d=c.push.bind(c);c.push=e,c=c.slice();for(var t=0;t<c.length;t++)e(c[t]);var p=d;b()}([])</script><script src="/static/js/6.039ae66c.chunk.js"></script><script src="/static/js/main.ea76a870.chunk.js"></script></body></html>
